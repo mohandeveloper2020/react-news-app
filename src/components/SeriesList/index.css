@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.series-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.series-list li {
+  box-shadow: 5px 5px 20px #ddd;
+  padding: 5px;
+  margin: 20px;
+  text-align: left;
+}
+
+.series-list li:hover {
+  box-shadow: 5px 0px 30px #ccc;
+
+}
+
+.series-list .series-list_author{
+  font-style: italic;
+}
