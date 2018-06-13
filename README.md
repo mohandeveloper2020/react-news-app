@@ -1,20 +1,25 @@
 # react-news-app
 
-Installation steps:
+>Installation steps:
 
-git clone https://github.com/mohandeveloper2020/react-news-app.git
+`git clone https://github.com/mohandeveloper2020/react-news-app.git`
 
-(or)
+(or) go to browser >>
 
-go to browser >> https://github.com/mohandeveloper2020/react-news-app >> clone or download >> Download ZIP
+`https://github.com/mohandeveloper2020/react-news-app`
 
-cmd >> cd react-news-app
+clone or download >> Download ZIP
 
-``` # install dependencies
-npm install
+then go to cmd >>
 
-``` # serve with hot reload at localhost:8080
-npm start
 
-``` # build for production with minification
-build for production: npm run build
+`cd react-news-app`
+
+**# install dependencies**
+`npm install`
+
+**# serve with hot reload at localhost:3000**
+`npm start`
+
+**# build for production with minification**
+`npm run build`
