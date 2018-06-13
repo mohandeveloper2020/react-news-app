@@ -5,6 +5,7 @@ const NewsList = (props) => {
   return(
     <div className="grid-container">
       <ul className="news-list">
+
         {props.list.map(
           (news) => (
             <li key={news.title}>
@@ -17,6 +18,7 @@ const NewsList = (props) => {
             </li>
           )
         )}
+
       </ul>
     </div>
   )

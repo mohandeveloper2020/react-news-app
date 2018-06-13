@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import world from '../world.svg';
+import world from '../../world.svg';
 import './index.css';
-import NewsList from '../components/NewsList';
+import NewsList from '../NewsList';
 
 class App extends Component {
 
@@ -33,7 +33,7 @@ class App extends Component {
           <h1 className="App-title">React News App</h1>
         </header>
         <p className="App-intro">
-          Top headlines from <strong>'TechCrunch'</strong> right now.
+          Top headlines from <strong>'TechCrunch'</strong>
         </p>
         <NewsList list={this.state.news}/>
       </div>
