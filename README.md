@@ -10,10 +10,12 @@ go to browser >> https://github.com/mohandeveloper2020/react-news-app >> clone o
 
 cmd >> cd react-news-app
 
+
 #install dependencies
 npm install
 
+#serve with hot reload at localhost:3000
 npm start
 
-
-for bundling for build purpose : npm run build
+# build for production with minification
+npm run build
