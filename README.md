@@ -10,6 +10,7 @@ go to browser >> https://github.com/mohandeveloper2020/react-news-app >> clone o
 
 cmd >> cd react-news-app
 
+#install dependencies
 npm install
 
 npm start
