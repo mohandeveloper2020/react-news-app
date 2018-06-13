@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import world from '../world.svg';
 import './index.css';
-import SeriesList from '../components/SeriesList';
+import NewsList from '../components/NewsList';
 
 class App extends Component {
 
   state = {
-    series : []
+    news : []
   }
 
   componentDidMount(){
@@ -19,8 +19,8 @@ class App extends Component {
       )
       .then(
         (json) => {
-          console.log(json.articles)
-          this.setState({ series : json.articles })
+          //console.log(json.articles)
+          this.setState({ news : json.articles })
         }
       )
   }
@@ -29,14 +29,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={world} className="App-logo" alt="world" />
           <h1 className="App-title">React News App</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          The length is {this.state.series.length}          
+          Top headlines from <strong>'TechCrunch'</strong> right now.
         </p>
-        <SeriesList list={this.state.series}/>
+        <NewsList list={this.state.news}/>
       </div>
     );
   }

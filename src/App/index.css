@@ -1,16 +1,19 @@
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+  background: #eee;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite reverse 20s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #34495E;
   height: 150px;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
@@ -19,7 +22,7 @@
 }
 
 .App-intro {
-  font-size: large;
+  font-size: medium;
 }
 
 @keyframes App-logo-spin {
