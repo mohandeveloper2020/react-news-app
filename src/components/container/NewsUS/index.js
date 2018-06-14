@@ -26,6 +26,9 @@ class NewsUS extends Component {
   render(){
     return(
       <div>
+        <p className="App-intro">
+          Top headlines from <strong>'US'</strong>
+        </p>
         <NewsList list={this.state.news}/>
       </div>
     )

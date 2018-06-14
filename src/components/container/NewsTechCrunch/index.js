@@ -17,7 +17,7 @@ class NewsTechCrunch extends Component {
       )
       .then(
         (json) => {
-          //console.log(json.articles)
+          console.log(json.articles)
           this.setState({ news : json.articles })
         }
       )
@@ -26,6 +26,9 @@ class NewsTechCrunch extends Component {
   render(){
     return(
       <div>
+        <p className="App-intro">
+          Top headlines from <strong>'TechCrunch'</strong>
+        </p>
         <NewsList list={this.state.news}/>
       </div>
     )
