@@ -17,6 +17,17 @@
   color: white;
 }
 
+.App-footer {
+  background-color: #34495E;
+  height: 20px;
+  padding: 5px;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .App-title {
   font-size: 1.5em;
 }
@@ -32,4 +43,5 @@
 
 .news-link-btn {
   margin: 10px;
+  cursor: pointer;
 }

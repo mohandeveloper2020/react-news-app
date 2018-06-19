@@ -35,8 +35,8 @@ class App extends Component {
           </div>
         </Router>
 
-        <footer className="App-header">
-          <p>Footer section</p>
+        <footer className="App-footer">
+          Footer section
         </footer>
       </div>
     );
