@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import world from '../../world.svg';
 import './index.css';
-import NewsHome from '../container/NewsHome';
+import NewsApple from '../container/NewsApple';
 import NewsTechCrunch from '../container/NewsTechCrunch';
 import NewsUS from '../container/NewsUS';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
@@ -18,7 +18,7 @@ class App extends Component {
         <Router>
           <div>
             <button className="news-link-btn">
-              <Link to="/">Home</Link>
+              <Link to="/">News Apple</Link>
             </button>
 
             <button className="news-link-btn">
@@ -29,8 +29,8 @@ class App extends Component {
               <Link to="/US">News US</Link>
             </button>
 
-            <Route exact path="/" component={NewsHome} />
-            <Route path="/TC" component={NewsTechCrunch} />
+            <Route exact path="/" component={NewsApple} />
+            <Route exact path="/TC" component={NewsTechCrunch} />
             <Route path="/US" component={NewsUS} />
           </div>
         </Router>
