@@ -8,7 +8,7 @@ class NewsUS extends Component {
   }
 
   componentDidMount(){
-    fetch('https://newsapi.org/v2/everything?q=apple&from=2018-06-11&to=2018-06-11&sortBy=popularity&apiKey=6c13a32e23b643989e19a722674ca873')
+    fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6c13a32e23b643989e19a722674ca873')
       .then(
         (response) => {
           //console.log(response)
