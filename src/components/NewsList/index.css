@@ -71,3 +71,8 @@ button a {
   text-decoration: none;
   color: #fff;
 }
+
+.news-link-btn {
+  margin: 10px;
+  cursor: pointer;
+}

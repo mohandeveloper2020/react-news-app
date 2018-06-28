@@ -10,8 +10,8 @@ class NewsApple extends Component {
   componentDidMount(){
 
     const apple = `https://newsapi.org/v2/everything?q=apple&from=2018-06-20&to=2018-06-20&sortBy=popularity&apiKey=6c13a32e23b643989e19a722674ca873`;
-    const techcrunch = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6c13a32e23b643989e19a722674ca873`;
-    const us = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6c13a32e23b643989e19a722674ca873`;
+    //const techcrunch = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6c13a32e23b643989e19a722674ca873`;
+    //const us = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6c13a32e23b643989e19a722674ca873`;
 
     fetch(`${apple}`)
       .then(
