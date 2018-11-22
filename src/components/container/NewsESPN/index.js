@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import NewsList from '../../NewsList';
 
-class NewsUS extends Component {
+class NewsESPN extends Component {
 
   state = {
     news : []
   }
 
   componentDidMount(){
-    fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6c13a32e23b643989e19a722674ca873')
+    fetch('https://newsapi.org/v2/top-headlines?sources=espn-cric-info&apiKey=6c13a32e23b643989e19a722674ca873')
       .then(
         (response) => {
           //console.log(response)
@@ -27,7 +27,7 @@ class NewsUS extends Component {
     return(
       <div>
         <p className="App-intro">
-          Top headlines from <strong>'US'</strong>
+          Top headlines from <strong>'ESPN Cric Info'</strong>
         </p>
         <NewsList list={this.state.news}/>
       </div>
@@ -35,4 +35,4 @@ class NewsUS extends Component {
   }
 }
 
-export default NewsUS;
+export default NewsESPN;

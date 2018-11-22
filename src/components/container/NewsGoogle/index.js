@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewsList from '../../NewsList';
 
-class NewsApple extends Component {
+class NewsGoogle extends Component {
 
   state = {
     news : []
@@ -9,11 +9,11 @@ class NewsApple extends Component {
 
   componentDidMount(){
 
-    const apple = `https://newsapi.org/v2/everything?q=apple&from=2018-06-20&to=2018-06-20&sortBy=popularity&apiKey=6c13a32e23b643989e19a722674ca873`;
+    const google = `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=6c13a32e23b643989e19a722674ca873`;
     //const techcrunch = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=6c13a32e23b643989e19a722674ca873`;
     //const us = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6c13a32e23b643989e19a722674ca873`;
 
-    fetch(`${apple}`)
+    fetch(`${google}`)
       .then(
         (response) => {
           //console.log(response)
@@ -32,7 +32,7 @@ class NewsApple extends Component {
     return(
       <div>
         <p className="App-intro">
-          Top headlines from <strong>'Apple'</strong>
+          Top headlines from <strong>'Google News (India)'</strong>
         </p>
         <NewsList list={this.state.news}/>
       </div>
@@ -40,4 +40,4 @@ class NewsApple extends Component {
   }
 }
 
-export default NewsApple;
+export default NewsGoogle;

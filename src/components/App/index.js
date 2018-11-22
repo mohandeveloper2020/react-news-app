@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import world from '../../world.svg';
 import './index.css';
-import NewsApple from '../container/NewsApple';
+import NewsGoogle from '../container/NewsGoogle';
 import NewsTechCrunch from '../container/NewsTechCrunch';
-import NewsUS from '../container/NewsUS';
+import NewsESPN from '../container/NewsESPN';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
         <Router>
           <div>
             <button className="news-link-btn">
-              <Link to="/">News Apple</Link>
+              <Link to="/">News Google</Link>
             </button>
 
             <button className="news-link-btn">
@@ -26,12 +26,12 @@ class App extends Component {
             </button>
 
             <button className="news-link-btn">
-              <Link to="/US">News US</Link>
+              <Link to="/ESPN">News ESPN</Link>
             </button>
 
-            <Route exact path="/" component={NewsApple} />
-            <Route exact path="/TC" component={NewsTechCrunch} />
-            <Route path="/US" component={NewsUS} />
+            <Route exact path="/" component={NewsGoogle} />
+            <Route path="/TC" component={NewsTechCrunch} />
+            <Route path="/ESPN" component={NewsESPN} />
           </div>
         </Router>
 
