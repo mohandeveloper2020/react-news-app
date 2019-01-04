@@ -27,7 +27,7 @@ class NewsTechCrunch extends Component {
     return(
       <div>
         <p className="App-intro">
-          Top headlines from <strong>'TechCrunch'</strong>
+          Top headlines from <strong>'TechCrunch News'</strong>
         </p>
         <NewsList list={this.state.news}/>
       </div>

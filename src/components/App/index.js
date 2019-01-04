@@ -18,15 +18,15 @@ class App extends Component {
         <Router>
           <div>
             <button className="news-link-btn">
-              <Link to="/">News Google</Link>
+              <Link to="/">Google News</Link>
             </button>
 
             <button className="news-link-btn">
-              <Link to="/TC">News TechCrunch</Link>
+              <Link to="/TC">Tech News</Link>
             </button>
 
             <button className="news-link-btn">
-              <Link to="/ESPN">News ESPN</Link>
+              <Link to="/ESPN">Sports News</Link>
             </button>
 
             <Route exact path="/" component={NewsGoogle} />

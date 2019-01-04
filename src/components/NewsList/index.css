@@ -28,11 +28,18 @@
   margin: 20px;
   text-align: left;
   box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  border-radius: 10px;
+  background: #f3f3f3;
 }
 
 .news-list li:hover {
   transform: translate3D(0,-2px,0) scale(1);
   box-shadow: 0 15px 50px rgba(0,0,0,.2);
+  background: #f9f9f9;
+}
+
+.news-list li h5:nth-child(1) {
+  color: #777;
 }
 
 .news-list li h3 a{
@@ -45,6 +52,10 @@
   text-decoration: underline;
 }
 
+.news-list li p {
+  color: #333;
+}
+
 .news-list .news-list_author{
   font-style: italic;
   color: #999;
@@ -53,7 +64,7 @@
 }
 
 img {
-  width: 80%;
+  width: 100%;
 }
 
 button {
@@ -61,6 +72,7 @@ button {
   border: none;
   background: #FF5733;
   margin: 10px 0;
+  border-radius: 5px;
 }
 
 button:hover {
